@@ -1,77 +1,162 @@
-<index.html>
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>TechEscuintla - Soluciones Informáticas</title>
-<style>
-body {
-font-family: 'Segoe UI', sans-serif;
-background: linear-gradient(to right, #e0f7fa, #e1f5fe);
-margin: 0;
-padding: 0;}
-header, footer {
-background-color: #0288d1;
-color: white;
-padding: 15px;
-text-align: center;}
-nav a {
-margin: 0 15px;
-color: white;
-text-decoration: none;
-font-weight: bold;}
-section {
-background-color: white;
-margin: 20px auto;
-padding: 20px;
-max-width: 900px;
-box-shadow: 0 0 10px rgba(0,0,0,0.1);
-border-radius: 8px;}
-h2 {
-color: #0277bd;
-}
-ul {
-padding-left: 20px;}
-iframe {
-width: 100%;
-height: 300px;
-border: 0;
-border-radius: 8px;}
-</style>
+  <meta charset="UTF-8" />
+  <title>Proyecto de Redes y Programación</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f0f0f5;
+      color: #2d3436;
+    }
+    header {
+      background-color: #6c5ce7;
+      color: white;
+      padding: 40px 20px 20px;
+      text-align: center;
+    }
+    header h1 { margin: 0; font-size: 28px; }
+    header p { margin: 5px 0 0; font-size: 16px; }
+    .integrantes {
+      text-align: center;
+      background-color: #dfe6e9;
+      padding: 20px;
+      font-size: 16px;
+    }
+    nav {
+      background-color: #5a4dcf;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav ul li {
+      margin: 10px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 15px;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    nav ul li a:hover {
+      background-color: #4834d4;
+    }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    section {
+      margin-bottom: 50px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #341f97;
+      margin-top: 0;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #e84393;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #d63078;
+    }
+    iframe {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #6c5ce7;
+      color: white;
+      margin-top: 30px;
+    }
+  </style>
 </head>
 <body>
-<header>
-<h1>TechEscuintla</h1>
-<p>Innovación que conecta</p>
-<nav>
-<a href="#inicio">Inicio</a>
-<a href="#servicios">Servicios</a>
-<a href="#ubicacion">Ubicación</a>
-</nav>
-</header>
-<section id="inicio">
-<h2>¿Quiénes somos?</h2>
-<p>TechEscuintla es una empresa informática guatemalteca ubicada en Escuintla, dedicada a brindar soluciones tecnológicas eficientes, creativas y a la medida de cada cliente. Nuestro objetivo es impulsar la transformación digital en la región.</p>
-</section>
-<section id="servicios">
-<h2>Servicios Informáticos</h2>
-<ul>
-<li>Desarrollo de páginas web modernas y adaptables</li>
-<li>Mantenimiento y reparación de equipos de cómputo</li>
-<li>Instalación de redes y servidores</li>
-<li>Asesoría en seguridad informática</li>
-<li>Automatización de procesos empresariales</li>
-</ul>
-</section>
-<section id="ubicacion">
-<h2>Conexión con una visión real</h2>
-<p>Nos encontramos en el corazón de Escuintla, listos para ofrecer soluciones reales con atención personalizada. ¡Conéctate con nosotros!</p>
-<iframe 
-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.547105981131!2d-90.78829178512878!3d14.30457569000851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a7d3e67b7b0b%3A0x107e8c961207d1e9!2sEscuintla!5e0!3m2!1ses-419!2sgt!4v1683929383243!5m2!1ses-419!2sgt"
-allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-</iframe>
-</section>
-<footer>
-<p>&copy; 2025 TechEscuintla - Todos los derechos reservados</p>
-</footer>
+  <header>
+    <h1>Proyecto de Redes y Programación</h1>
+    <p>Universidad Mariano Galvez - Introduccion a los sistemas de computo</p>
+  </header>
+
+  <div class="integrantes">
+    <strong>Integrantes:</strong> Katherin Cordova, Cristian Poris, Asucena Carias
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#vm">Máquina Virtual</a></li>
+      <li><a href="#packet">Packet Tracer</a></li>
+      <li><a href="#empresa">Nuestra Empresa</a></li>
+      <li><a href="#pseint">PSeInt</a></li>
+      <li><a href="#cpp">Juego C++</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="inicio">
+      <h2>Inicio</h2>
+      <p>Bienvenidos a nuestro proyecto académico titulado “Redes y Programación”, desarrollado como parte del curso de la carrera de Ingeniería en Sistemas. Este proyecto integra conocimientos fundamentales sobre virtualización, diseño y configuración de redes, así como la lógica de programación aplicada en distintos lenguajes.
+
+El propósito principal es demostrar el uso de herramientas tecnológicas como máquinas virtuales, simuladores de red (Packet Tracer), y entornos de desarrollo como PSeInt y C++, aplicados en situaciones reales y prácticas.
+
+A lo largo del sitio, encontrarás recursos, videos explicativos y ejemplos que reflejan lo aprendido durante el ciclo académico, trabajando en equipo para llevar la teoría a la práctica.</p>
+    </section>
+
+    <section id="vm">
+      <h2>Máquina Virtual</h2>
+      <p>Video demostrativo sobre el uso de la máquina virtual empleada en el proyecto:</p>
+      <iframe width="700" height="400" src="https://www.youtube.com/embed/MTcUk31m56k" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section id="packet">
+      <h2>Packet Tracer</h2>
+      <p>Simulación de red desarrollada con Cisco Packet Tracer:</p>
+      <a href="archivos/packet_tracer/KatherinCordova1.pkt" class="btn" download>Descargar Red 1</a><br><br>
+      <a href="archivos/packet_tracer/KatherinCordova2.pkt" class="btn" download>Descargar Red 2</a>
+    </section>
+
+    <section id="empresa">
+      <h2>Nuestra Empresa</h2>
+      <p>Puedes conocer más sobre nuestra empresa, misión y visión haciendo clic en el siguiente enlace:</p>
+      <a href="https://cristianporis.github.io/web/#ubicacion" class="btn" target="_blank">Visitar sitio web</a>
+    </section>
+
+    <section id="pseint">
+      <h2>PSeInt</h2>
+      <p>Archivos de ejercicios desarrollados en pseudocódigo con PSeInt:</p>
+      <a href="archivos/pseint/ejercicios_pseint.zip" class="btn" download>Descargar ejercicios</a>
+    </section>
+
+    <section id="cpp">
+      <h2>Juego en C++</h2>
+      <p>Incluimos un pequeño juego de Buscaminas desarrollado en C++ como parte del proyecto:</p>
+ <a href="archivos/juego_cpp/juego.exe" class="btn" download>Descargar juego</a><br><br>
+      <a href="archivos/juego_cpp/juego.cpp" class="btn" download>Descargar código fuente del juego</a>
+    </section>
+  </main>
+
+  <footer>
+    <p> 2025 Proyecto Académico - Derechos Reservados Innovación</p>
+  </footer>
 </body>
 </html>
